@@ -1,0 +1,11 @@
+# PDF Processing
+PyPDF2>=3.0.0
+pdf2image>=1.16.3
+pytesseract>=0.3.10
+
+# Image Processing
+Pillow>=10.0.0  # Required by pdf2image
+
+# Note: You also need to install these system dependencies:
+# - Tesseract OCR: https://github.com/UB-Mannheim/tesseract/wiki
+# - Poppler: https://github.com/oschwartz10612/poppler-windows/releases/
