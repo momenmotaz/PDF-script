@@ -32,6 +32,24 @@ Converts PDF files to text files using OCR.
 - Support for page range selection
 - Organized output directory structure
 
+### 4. Simple PDF Creator (`create_pdf_simple.py`)
+Creates a formatted PDF file from a text file, with special formatting for questions and answers.
+
+**Features:**
+- Converts text files to PDF format
+- Special formatting for questions (bold)
+- Special formatting for correct answers (bold)
+- Automatic page breaks
+- Preserves text indentation
+
+```bash
+# Usage
+python create_pdf_simple.py [input_text_file] [output_pdf_file]
+
+# Example
+python create_pdf_simple.py exam_questions.txt exam_formatted.pdf
+```
+
 ## 📋 Requirements
 
 1. Python Libraries (install using `pip install -r requirements.txt`):
@@ -98,6 +116,18 @@ python pdf_to_text.py [input_pdf] [start_page] [end_page]
 python pdf_to_text.py ./document.pdf 1 10
 ```
 
+### Simple PDF Creator
+```bash
+# Method 1: Interactive
+python create_pdf_simple.py
+
+# Method 2: Command line arguments
+python create_pdf_simple.py [input_text_file] [output_pdf_file]
+
+# Example
+python create_pdf_simple.py exam_questions.txt exam_formatted.pdf
+```
+
 ## 📁 Output Directory Structure
 ```
 output/
@@ -125,6 +155,12 @@ python pdf_to_text.py ./Robotics.pdf 1 5
 # Output: Creates a text file in output/texts/
 ```
 
+### 4. Creating a Simple PDF
+```bash
+python create_pdf_simple.py exam_questions.txt exam_formatted.pdf
+# Output: Creates a formatted PDF file
+```
+
 ## 🌐 Arabic Usage Guide (دليل الاستخدام بالعربي)
 
 ### قارئ PDF
@@ -141,6 +177,24 @@ python pdf_to_text.py ./Robotics.pdf 1 5
 - يحول ملفات PDF إلى ملفات نصية
 - يدعم التعرف على النصوص
 - ينظم الملفات في مجلدات
+
+### منشئ PDF البسيط
+- بيحول ملف نصي لـ PDF وبيظبط شكل الأسئلة والإجابات.
+
+**المميزات:**
+- بيحول الملفات النصية لـ PDF
+- بيخلي الأسئلة بولد (عريض)
+- بيخلي الإجابات الصحيحة بولد (عريض)
+- بيقسم الصفحات لوحده
+- بيحافظ على المسافات في بداية السطور
+
+**طريقة الاستخدام:**
+```bash
+python create_pdf_simple.py [ملف_النص] [ملف_البي_دي_اف]
+
+# مثال
+python create_pdf_simple.py exam_questions.txt exam_formatted.pdf
+```
 
 ## 🌐 دليل الاستخدام بالعربي المصري
 
@@ -177,6 +231,16 @@ python pdf_to_text.py ./Robotics.pdf 1 5
 - بيسمي الملفات لوحده بشكل منظم
 - تقدر تختار الصفحات اللي عايزها
 - بيحط الملفات في فولدرات منظمة
+
+### ٤. منشئ PDF البسيط (create_pdf_simple.py)
+بيحول ملف نصي لـ PDF وبيظبط شكل الأسئلة والإجابات.
+
+**المميزات:**
+- بيحول الملفات النصية لـ PDF
+- بيخلي الأسئلة بولد (عريض)
+- بيخلي الإجابات الصحيحة بولد (عريض)
+- بيقسم الصفحات لوحده
+- بيحافظ على المسافات في بداية السطور
 
 ## 📋 المتطلبات
 
@@ -247,6 +311,18 @@ python pdf_to_text.py [مسار_الملف] [صفحة_البداية] [صفحة_
 python pdf_to_text.py ./document.pdf 1 10
 ```
 
+### منشئ PDF البسيط
+```bash
+# الطريقة الأولى: تفاعلي
+python create_pdf_simple.py
+
+# الطريقة التانية: بالأوامر على طول
+python create_pdf_simple.py [ملف_النص] [ملف_البي_دي_اف]
+
+# مثال
+python create_pdf_simple.py exam_questions.txt exam_formatted.pdf
+```
+
 ## 📁 تنظيم الفولدرات
 ```
 output/
@@ -274,6 +350,12 @@ python pdf_to_text.py ./Robotics.pdf 1 5
 # النتيجة: هيعمل ملف نصي في فولدر output/texts/
 ```
 
+### ٤. إنشاء PDF بسيط
+```bash
+python create_pdf_simple.py exam_questions.txt exam_formatted.pdf
+# النتيجة: هيعمل ملف PDF منظم
+```
+
 ## 📝 ملاحظات مهمة
 - أرقام الصفحات بتبدأ من ١
 - تقدر تستخدم مسارات نسبية أو كاملة
@@ -288,3 +370,4 @@ python pdf_to_text.py ./Robotics.pdf 1 5
 
 ## 📄 الترخيص
 المشروع مفتوح المصدر ومتاح تحت رخصة MIT.
+# Made by Momen Motaz

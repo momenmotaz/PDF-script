@@ -5,6 +5,8 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Set paths for external tools
+#غير الباث حسب جهازك
+#change path for depend on your device
 POPPLER_PATH = r"d:/momen fci 3/AI apps/lec/poppler/poppler-23.11.0/Library/bin"
 TESSERACT_PATH = r"d:/momen fci 3/AI apps/lec/tesseract-ocr/tesseract.exe"
 
